@@ -58,6 +58,12 @@ a {
     padding: 0 20px;
 }
 
+/* Profile Card Start */
+.profile-card {
+    background-color: #18181B;
+    padding: 24px;
+}
+
 .customFileInput::-webkit-file-upload-button {
     visibility: hidden;
 }
@@ -73,6 +79,26 @@ a {
     padding: 5px 8px;
 }
 
-.customFileInput::after {
-    content: '';
+input[type="file"] {
+    color: transparent;
 }
+
+.avatar-upload {
+    padding-left: 15px;
+    margin-top: 15px;
+}
+
+.avatar-upload p {
+    color: #71717A;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .profile-card {
+        width: 100%;
+    }
+}
+
+/* Profile Card End */
