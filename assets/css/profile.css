@@ -1,0 +1,78 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Regular.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Medium.ttf);
+    font-style: medium;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-SemiBold.ttf);
+    font-style: semibold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Bold.ttf);
+    font-style: bold;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Black.ttf);
+    font-style: black;
+    font-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+:root {
+    --main-font: "Gilroy";
+    --bg-color: #09090b;
+    --primary-color: #d50000;
+    --btn-color: #f44336;
+    --text-color1: #ffffff;
+    --text-color2: #71717a;
+}
+
+/* Dashboard Start */
+
+.content_wrapper {
+    padding: 0 20px;
+}
+
+.customFileInput::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.customFileInput::before {
+    content: 'Upload photo';
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color1);
+    border-radius: 8px;
+    border: 1px solid #3F3F46;
+    background: #27272A;
+    padding: 5px 8px;
+}
+
+.customFileInput::after {
+    content: '';
+}
