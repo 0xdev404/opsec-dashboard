@@ -463,7 +463,7 @@ td {
   }
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 575px) {
   .table_wrapper {
     width: 100%;
     overflow-x: scroll;
@@ -471,6 +471,17 @@ td {
 
   .product_table {
     width: 200%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .table_wrapper {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .product_table {
+    width: 230%;
   }
 }
 
