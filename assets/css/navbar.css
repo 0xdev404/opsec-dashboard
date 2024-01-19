@@ -248,10 +248,18 @@ body {
     display: none;
   }
 
+  .nav_logo h3 {
+    display: block;
+  }
+
   .nav_items .chat_btn {
     width: 40px;
     height: 40px;
     margin: 0 5px;
+  }
+
+  .mobile-chat-btn {
+    margin-left: 25px !important;
   }
 
   .nav_items .chat_btn span {
