@@ -236,7 +236,7 @@
 
 /* Service Counter End */
 
-/* Service Counter Start */
+/* Node Service Tab Start */
 
 .nav-tabs {
   border-color: #27272a !important;
@@ -352,6 +352,128 @@
   -o-transform: translateX(6px);
 }
 
-/* Service Counter End */
+.services_items {
+  display: flex;
+  gap: 50px;
+}
+
+.services_item {
+  width: 50%;
+  position: relative;
+}
+
+.services_item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #27272a;
+  right: -25px;
+}
+
+.services_item h2 {
+  font-family: var(--main-font);
+  font-size: 1.5em;
+  color: var(--text-color1);
+  margin: 20px 0;
+}
+
+.product_table {
+  border: 1px solid #27272a;
+  outline: 1px solid #27272a;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  width: 100%;
+}
+
+.product_table th {
+  border-bottom: 1px solid #27272a;
+  color: #a1a1aa;
+  font-size: 13px;
+}
+
+.product_table th,
+td {
+  padding: 10px;
+  font-family: var(--main-font);
+  font-weight: 500;
+}
+
+.product_table td {
+  color: var(--text-color1);
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.product_table td img {
+  width: 18px;
+  margin-top: -3px;
+  margin-right: 3px;
+}
+
+.product_table td .active {
+  color: #009688;
+  margin-right: 20px;
+}
+
+.product_table td a {
+  text-decoration: none;
+  margin: 0 3px;
+}
+
+@media screen and (max-width: 1400px) {
+  .services_item {
+    width: 100%;
+    position: relative;
+  }
+
+  .services_items {
+    display: block;
+    gap: 0;
+  }
+
+  .services_item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 0;
+    background: transparent;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .table_wrapper {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .product_table {
+    width: 150%;
+    border: 1px solid #27272a;
+    outline: none;
+    overflow: visible;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .table_wrapper {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .product_table {
+    width: 200%;
+  }
+}
+
+/* Node Service Tab End */
 
 /* Dashboard End */
