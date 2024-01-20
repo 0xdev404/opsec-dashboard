@@ -52,135 +52,11 @@ a {
   --text-color2: #71717a;
 }
 
-/* Scroll Bar CSS Start */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #27272a;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--btn-color);
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #71717a;
-}
-
-/* Scroll Bar CSS End */
-
 /* Dashboard Start */
 
 .content_wrapper {
   padding: 0 20px;
 }
-
-/* VPS Plan Content Start */
-
-.nodes_content .nodes_title {
-  font-size: 1.5em;
-  color: var(--text-color1);
-  font-weight: 700;
-  font-family: var(--main-font);
-  padding-top: 25px;
-}
-
-.nodes_card {
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-  padding: 15px;
-  margin-top: 25px;
-}
-
-.nodes_card:hover {
-  background: linear-gradient(180deg, #1a1a1a 0%, rgba(26, 26, 26, 0) 100%);
-}
-
-.bar {
-  height: 1px;
-  background-color: #27272a;
-  margin: 5px 0 10px 0;
-}
-
-.nodes_card_icon img {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-  margin-bottom: 15px;
-}
-
-.nodes_card h2 {
-  font-size: 24px;
-  color: var(--text-color1);
-  font-weight: 700;
-  font-family: var(--main-font);
-  margin-bottom: 10px;
-}
-
-.nodes_card p {
-  font-size: 14px;
-  color: var(--text-color1);
-  font-weight: 500;
-  font-family: var(--main-font);
-  margin-bottom: 10px;
-}
-
-.nodes_card_btn {
-  margin-top: 20px;
-}
-
-.nodes_card_btn a {
-  text-decoration: none;
-  color: var(--text-color1);
-  background-color: var(--btn-color);
-  display: block;
-  font-family: var(--main-font);
-  font-weight: 600;
-  font-size: 1em;
-  text-align: center;
-  padding: 6px 0;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-
-.nodes_card_btn a svg {
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-
-.nodes_card_btn a:hover svg {
-  transform: translateX(6px);
-  -webkit-transform: translateX(6px);
-  -moz-transform: translateX(6px);
-  -ms-transform: translateX(6px);
-  -o-transform: translateX(6px);
-}
-
-/* VPS Plan Content End */
-
-/* Dashboard End */
 
 /* Transaction Details Start */
 .step-progress {
@@ -200,7 +76,7 @@ a {
   top: 0;
   left: 0;
   background-color: var(--btn-color);
-  width: 50%;
+  width: 0;
   height: 100%;
   z-index: -1;
 }
@@ -249,6 +125,7 @@ a {
 .progress-bar span.in_active {
   background-color: #18181b;
 }
+
 .progress-bar span img {
   width: 24px;
 }
@@ -450,3 +327,5 @@ a {
 }
 
 /* Transaction Box Content End */
+
+/* Dashboard End */
