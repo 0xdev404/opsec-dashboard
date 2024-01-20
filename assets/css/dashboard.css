@@ -54,7 +54,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #27272A;
+  background-color: #27272a;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -63,7 +63,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #71717A;
+  background: #71717a;
 }
 
 /* Scroll Bar CSS End */
@@ -470,38 +470,16 @@ td {
 }
 
 @media screen and (max-width: 990px) {
-  .table_wrapper {
-    width: 100%;
-    overflow-x: scroll;
-  }
-
   .product_table {
-    width: 150%;
-    border: 1px solid #27272a;
-    outline: none;
-    overflow: visible;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  .table_wrapper {
     width: 100%;
+    display: block;
     overflow-x: scroll;
+    white-space: nowrap;
   }
 
-  .product_table {
-    width: 200%;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .table_wrapper {
+  .product_table th,
+  td {
     width: 100%;
-    overflow-x: scroll;
-  }
-
-  .product_table {
-    width: 230%;
   }
 }
 

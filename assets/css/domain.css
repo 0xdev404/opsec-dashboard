@@ -54,7 +54,12 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #27272A;
+  background-color: #27272a;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -63,7 +68,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #71717A;
+  background: #71717a;
 }
 
 /* Scroll Bar CSS End */
@@ -313,24 +318,20 @@ td {
 }
 
 @media screen and (max-width: 1200px) {
-  .table_wrapper {
+  .domain_table {
     width: 100%;
+    display: block;
     overflow-x: scroll;
+    white-space: nowrap;
   }
 
-  .domain_table {
-    width: 150%;
-    border: 1px solid #27272a;
-    outline: none;
-    overflow: visible;
+  .domain_table th,
+  td {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .domain_table {
-    width: 200%;
-  }
-
   .content_wrapper {
     padding: 0 20px;
   }
@@ -343,10 +344,6 @@ td {
 
   .domain_head_btn a {
     margin-bottom: 25px;
-  }
-
-  .domain_table {
-    width: 260%;
   }
 }
 
