@@ -48,6 +48,26 @@
   --text-color2: #71717a;
 }
 
+/* Scroll Bar CSS Start */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #27272A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--btn-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #71717A;
+}
+
+/* Scroll Bar CSS End */
+
 /* Dashboard Start */
 
 .domain_search_icon {
