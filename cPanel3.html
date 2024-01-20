@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OpSec CloudVerse | Transaction Detail</title>
+    <title>OpSec CloudVerse | cPanel</title>
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="./assets/css/sidebar.css" />
     <link rel="stylesheet" href="./assets/css/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/vps.css" />
+    <link rel="stylesheet" href="./assets/css/cPanel3.css" />
     <!-- CSS Link -->
 
     <!-- Bootstrap CSS Link -->
@@ -205,8 +205,8 @@
           </div>
           <div class="submenu">
             <a href="#" class="link submenu-title">Domain</a>
-            <a href="./domain1.html" class="link">Buy Domain</a>
-            <a href="./domain3.html" class="link">My Domains</a>
+            <a href="#" class="link">Buy Domain</a>
+            <a href="#" class="link">My Domains</a>
           </div>
         </li>
 
@@ -276,9 +276,9 @@
           </div>
           <div class="submenu">
             <a href="#" class="link submenu-title">Buy Hosting</a>
-            <a href="#" class="link">cPanel</a>
-            <a href="./vps.html" class="link active">VPS</a>
-            <a href="./rdp.html" class="link">RDP</a>
+            <a href="#" class="link active">cPanel</a>
+            <a href="#" class="link">VPS</a>
+            <a href="#" class="link">RDP</a>
           </div>
         </li>
 
@@ -500,11 +500,7 @@
       <!-- navbar start -->
       <nav class="navbar">
         <div class="nav_logo">
-          <h3>Buy VPS</h3>
-          <p style="color: #71717a">
-            All of plans has
-            <span style="color: #ffffff">30 days</span> uninterrupted service
-          </p>
+          <h3>Buy cPanel</h3>
         </div>
 
         <div class="nav_items">
@@ -638,16 +634,20 @@
         <div class="step-progress">
           <div class="progress-bar">
             <span class="active">
-              <img src="./assets/icons/vps/tick-sign.svg" />
+              <img src="./assets/icons/vps/tick-sign.svg" alt="" />
             </span>
             <p>Choose plan</p>
           </div>
           <div class="progress-bar">
-            <span class="in_active">2</span>
+            <span class="active">
+              <img src="./assets/icons/vps/tick-sign.svg" alt="" />
+            </span>
             <p>Transaction detail</p>
           </div>
           <div class="progress-bar step-03">
-            <span>3</span>
+            <span class="active">
+              <img src="./assets/icons/vps/tick-sign.svg" alt="" />
+            </span>
             <p>Finalize</p>
           </div>
         </div>
@@ -662,70 +662,32 @@
           <div class="col-xxl-5 col-xl-6 col-lg-10 col-md-10">
             <div class="transaction-details-box">
               <div class="t-details-head text-center">
-                <h1>Transaction Detail</h1>
+                <div class="t-details-icon">
+                  <img
+                    src="./assets/icons/domain/success_check_icon.svg"
+                    alt=""
+                  />
+                </div>
+                <h1>Successful Payment</h1>
                 <p>[description]</p>
               </div>
 
-              <div class="details-box d-flex justify-content-between">
-                <div class="product-details">
-                  <h3>Bulletproof Hosting</h3>
-                  <p>
-                    VCPU: 1x Xeon 5600 <br />RAM: 1GB DDR4 <br />Storage: 30GB
-                    SSD
-                  </p>
+              <div class="transaction_detail_item">
+                <div class="transaction_detail_name">
+                  <h3>Pay ID</h3>
                 </div>
 
-                <div class="product-price">
-                  <h3>$38.41 / Month</h3>
-                </div>
+                <p class="transaction_detail_price">OS9858964584589656</p>
               </div>
 
-              <form action="" id="select-os-id">
-                <label for="os">Select OS</label><br />
-                <span>
-                  <select name="select-os" id="os-selection">
-                    <option value="Windows OS">Select OS</option>
-                    <option value="Windows OS">Windows OS</option>
-                    <option value="MAC OS">MAC OS</option>
-                    <option value="Linux OS">Linux OS</option>
-                  </select>
-                </span>
-              </form>
-
-              <div class="divider2"></div>
-
-              <div class="total-payment-card">
-                <div class="total-amount d-flex justify-content-between pb-2">
-                  <h2>Total</h2>
-                  <h2>$38.41</h2>
-                </div>
-                <form action="" id="total-payment-form">
-                  <label for="discount">Discount code</label><br />
-                  <input type="text" placeholder="Type your discount code" />
-
-                  <div class="payment-button mt-4">
-                    <a href="#" class="cart-btn">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M18 12.75H6C5.59 12.75 5.25 12.41 5.25 12C5.25 11.59 5.59 11.25 6 11.25H18C18.41 11.25 18.75 11.59 18.75 12C18.75 12.41 18.41 12.75 18 12.75Z"
-                          fill="white"
-                        />
-                        <path
-                          d="M12 18.75C11.59 18.75 11.25 18.41 11.25 18V6C11.25 5.59 11.59 5.25 12 5.25C12.41 5.25 12.75 5.59 12.75 6V18C12.75 18.41 12.41 18.75 12 18.75Z"
-                          fill="white"
-                        /></svg
-                      >Add to card
-                    </a>
-
-                    <a href="#" class="pay-btn"> Pay with Balance </a>
-                  </div>
-                </form>
+              <div class="payment_success_btn">
+                <a href="#"
+                  >All Services
+                  <span
+                    ><img
+                      src="./assets/icons/signup/arrow-right.svg"
+                      alt="" /></span
+                ></a>
               </div>
             </div>
           </div>

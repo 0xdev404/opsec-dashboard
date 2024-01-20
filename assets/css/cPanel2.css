@@ -76,7 +76,7 @@ a {
   top: 0;
   left: 0;
   background-color: var(--btn-color);
-  width: 0;
+  width: 50%;
   height: 100%;
   z-index: -1;
 }
@@ -565,6 +565,40 @@ a {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
+}
+
+.total-payment-card {
+  margin-top: 20px;
+}
+
+.transaction_detail_item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #27272a;
+}
+
+.transaction_detail_name h3 {
+  font-family: var(--main-font);
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-color1);
+}
+
+.transaction_detail_name p {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 500;
+  color: #71717a;
+  margin-bottom: 0;
+}
+
+.transaction_detail_price {
+  font-family: var(--main-font);
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-color1);
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 575px) {
