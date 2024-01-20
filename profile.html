@@ -454,22 +454,49 @@
         <!-- navbar end -->
 
         <!-- Profile Card Start -->
-        <div class="content_wrapper">
-            <div class="row d-flex justify-content-center">
-                <div class="col-sm-6 col-md-6 col-lg-6">
-                    <div class="profile-card">
-                        <div class="profile-avatar d-flex align-items-center">
-                            <div class="avatar-preview">
-                                <img src="./assets/img/profile/profile-avatar.svg" alt="">
-                            </div>
-                            <div class="avatar-upload">
-                                <div class="upload-btn d-flex">
-                                    <img src="./assets/icons/profile/trash.svg" alt="">
-                                    <input class="customFileInput" type="file" placeholder="Upload photo">
+        <div class="content_wrapper mt-5">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-sm-12 col-md-10 col-lg-7">
+                        <div class="profile-card">
+                            <div class="profile-avatar d-flex align-items-center">
+                                <div class="avatar-preview">
+                                    <img src="./assets/img/profile/profile-avatar.svg" alt="">
                                 </div>
-                                <p>Up to 5MB</p>
+                                <div class="avatar-upload">
+                                    <div class="upload-btn d-flex">
+                                        <img src="./assets/icons/profile/trash.svg" alt="">
+                                        <input class="customFileInput" type="file" placeholder="Upload photo">
+                                    </div>
+                                    <p>Up to 5MB</p>
+                                </div>
                             </div>
 
+                            <form action="" class="profile-infos">
+                                <div class="form-fields">
+                                    <label for="name">Name</label><br>
+                                    <input type="text" placeholder="Kyle Obama">
+                                </div>
+
+                                <div class="form-fields">
+                                    <label for="username">Telegram username</label><br>
+                                    <input type="text" placeholder="@Kyleobama">
+                                </div>
+
+                                <div class="form-fields">
+                                    <label for="password">Password</label><br>
+                                    <input type="password" placeholder="Kyle Obama">
+                                </div>
+
+                                <div class="form-fields">
+                                    <label for="confirmPass">Confirm Password</label><br>
+                                    <input type="password" placeholder="Kyle Obama">
+                                </div>
+                            </form>
+
+                            <div class="save-btn">
+                                <a href="#">Save changes</a>
+                            </div>
 
                         </div>
                     </div>
