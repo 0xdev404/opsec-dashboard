@@ -395,6 +395,29 @@ a {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   outline: none;
+  color: var(--text-color1);
+}
+
+.add_fund_search_box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add_fund_search_box .fund_add_btn {
+  border: none;
+  outline: none;
+  padding: 8px 30px;
+  background-color: var(--btn-color);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-family: var(--main-font);
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text-color1);
 }
 
 @media screen and (max-width: 575px) {

@@ -1,73 +1,73 @@
 @font-face {
-    font-family: Gilroy;
-    src: url(../fonts/Gilroy-Regular.ttf);
-    font-style: normal;
-    font-weight: 500;
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Regular.ttf);
+  font-style: normal;
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: Gilroy;
-    src: url(../fonts/Gilroy-Medium.ttf);
-    font-style: medium;
-    font-weight: 600;
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Medium.ttf);
+  font-style: medium;
+  font-weight: 600;
 }
 
 @font-face {
-    font-family: Gilroy;
-    src: url(../fonts/Gilroy-SemiBold.ttf);
-    font-style: semibold;
-    font-weight: 700;
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-SemiBold.ttf);
+  font-style: semibold;
+  font-weight: 700;
 }
 
 @font-face {
-    font-family: Gilroy;
-    src: url(../fonts/Gilroy-Bold.ttf);
-    font-style: bold;
-    font-weight: 800;
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Bold.ttf);
+  font-style: bold;
+  font-weight: 800;
 }
 
 @font-face {
-    font-family: Gilroy;
-    src: url(../fonts/Gilroy-Black.ttf);
-    font-style: black;
-    font-weight: 900;
+  font-family: Gilroy;
+  src: url(../fonts/Gilroy-Black.ttf);
+  font-style: black;
+  font-weight: 900;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 :root {
-    --main-font: "Gilroy";
-    --bg-color: #09090b;
-    --primary-color: #d50000;
-    --btn-color: #f44336;
-    --text-color1: #ffffff;
-    --text-color2: #71717a;
+  --main-font: "Gilroy";
+  --bg-color: #09090b;
+  --primary-color: #d50000;
+  --btn-color: #f44336;
+  --text-color1: #ffffff;
+  --text-color2: #71717a;
 }
 
 /* Scroll Bar CSS Start */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #27272A;
+  background-color: #27272a;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--btn-color);
-    border-radius: 5px;
+  background: var(--btn-color);
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #71717A;
+  background: #71717a;
 }
 
 /* Scroll Bar CSS End */
@@ -75,109 +75,130 @@ a {
 /* Dashboard Start */
 
 .content_wrapper {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 /* Profile Card Start */
 .profile-card {
-    background-color: #18181B;
-    padding: 24px;
-    border-radius: 24px;
+  background-color: #18181b;
+  padding: 24px;
+  border-radius: 24px;
 }
 
-.customFileInput::-webkit-file-upload-button {
-    visibility: hidden;
+.file_upload_btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color1);
+  border-radius: 8px;
+  border: 1px solid #3f3f46;
+  background: #27272a;
+  padding: 5px 8px;
+  cursor: pointer;
 }
 
-.customFileInput::before {
-    content: 'Upload photo';
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--text-color1);
-    border-radius: 8px;
-    border: 1px solid #3F3F46;
-    background: #27272A;
-    padding: 5px 8px;
-    cursor: pointer;
+.delete_btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-right: 15px;
 }
 
-input[type="file"] {
-    color: transparent;
+.upload-btn input[type="file"] {
+  display: none;
 }
 
 .avatar-upload {
-    padding-left: 15px;
-    margin-top: 15px;
+  padding-left: 15px;
+  margin-top: 15px;
 }
 
 .avatar-upload p {
-    color: #71717A;
-    font-size: 12px;
-    font-weight: 400;
-    margin-top: 10px;
+  color: #71717a;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 .customFileInput {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 1024px) {
-    .profile-card {
-        width: 100%;
-    }
+  .profile-card {
+    width: 100%;
+  }
 }
 
 .form-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 25px;
 }
 
 .form-fields label {
-    font-size: 12px;
-    color: #A1A1AA;
-    font-weight: 500;
-    padding-left: 10px;
-    padding-bottom: 8px;
+  font-size: 12px;
+  color: #a1a1aa;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-bottom: 8px;
 }
 
 .form-fields input {
-    background-color: #18181B;
-    width: 100%;
-    padding: 10px 14px;
-    border-radius: 12px;
-    border: 1px solid #27272A;
+  background-color: #18181b;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #27272a;
+  outline: none;
+  color: var(--text-color1);
+}
+
+.form-fields input::placeholder {
+  color: var(--text-color1);
 }
 
 .save-btn {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .save-btn {
-    background-color: #27272A;
-    font-size: 16px;
-    font-weight: 600;
-    padding: 10px 0px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #3F3F46;
-    border-radius: 12px;
-    border: none;
+  background-color: #27272a;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3f3f46;
+  border-radius: 12px;
+  border: none;
 }
 
 .save-btn:hover {
-    color: var(--text-color1);
-    background-color: var(--btn-color);
+  color: var(--text-color1);
+  background-color: var(--btn-color);
 }
 
 @media screen and (max-width: 768px) {
-    .profile-infos {
-        grid-template-columns: 1fr;
-        row-gap: 20px;
-    }
+  .content_wrapper {
+    padding: 0 10px;
+  }
+
+  .profile-card {
+    padding: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .form-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }
 
 /* Profile Card End */
