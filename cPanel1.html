@@ -661,7 +661,12 @@
             <form action="#">
               <div class="choose_domain_cards">
                 <label class="choose_domain_card">
-                  <input name="plan" class="radio" type="radio" checked />
+                  <input
+                    name="plan"
+                    class="radio"
+                    type="checkbox"
+                    onchange="checkChange()"
+                  />
                   <span class="plan-details">
                     <div class="domain_icon">
                       <img src="./assets/icons/domain/plus_sign.svg" alt="" />
@@ -671,7 +676,12 @@
                   </span>
                 </label>
                 <label class="choose_domain_card">
-                  <input name="plan" class="radio" type="radio" />
+                  <input
+                    name="plan"
+                    class="radio"
+                    type="checkbox"
+                    onchange="checkChange()"
+                  />
                   <span class="plan-details">
                     <div class="domain_icon">
                       <img src="./assets/icons/domain/globe_icon.svg" alt="" />
@@ -681,14 +691,14 @@
                   </span>
                 </label>
               </div>
+
+              <div class="card_divider"></div>
+
+              <div class="domain_search">
+                <label for="#">Enter domain</label>
+                <input type="text" placeholder="Type domain" />
+              </div>
             </form>
-
-            <div class="card_divider"></div>
-
-            <div class="domain_search">
-              <label for="#">Enter domain</label>
-              <input type="text" placeholder="Type domain" />
-            </div>
           </div>
         </div>
       </div>
@@ -714,5 +724,6 @@
     <!-- Bootstrap JS Bundle Link -->
 
     <script src="./js/sidebar.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
