@@ -151,7 +151,7 @@ a {
 @media screen and (max-width: 575px) {
   .progress-bar span {
     font-size: 16px;
-    padding: 4px 0 10px 0;
+    padding: 2px 8px;
     width: 30px;
     height: 30px;
     outline: 8px solid var(--bg-color);
@@ -162,7 +162,7 @@ a {
   }
 
   .progress-bar span img {
-    width: 18px;
+    width: 15px;
   }
 
   .step-progress {
@@ -174,15 +174,15 @@ a {
   }
 
   .progress-bar:nth-child(1) {
-    top: -18px;
+    top: -15px;
   }
 
   .progress-bar:nth-child(2) {
-    top: -18px;
+    top: -15px;
   }
 
   .progress-bar:nth-child(3) {
-    top: -18px;
+    top: -15px;
   }
 }
 
@@ -310,6 +310,7 @@ a {
   color: var(--text-color1);
   font-weight: 600;
   font-size: 1em;
+  text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 10px;
 }
