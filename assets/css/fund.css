@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Regular.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Medium.ttf);
+    font-style: medium;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-SemiBold.ttf);
+    font-style: semibold;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Bold.ttf);
+    font-style: bold;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy-Black.ttf);
+    font-style: black;
+    font-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: "Gilroy";
+    --bg-color: #09090b;
+    --primary-color: #d50000;
+    --btn-color: #f44336;
+    --text-color1: #ffffff;
+    --text-color2: #71717a;
+}
+
+/* Scroll Bar CSS Start */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #27272a;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--btn-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #71717a;
+}
+
+/* Scroll Bar CSS End */
+
+
+/* Fund table start */
+.domain_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.domain_head_btn a {
+    text-decoration: none;
+    color: var(--text-color1);
+    font-weight: 600;
+    background: var(--btn-color);
+    padding: 8px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: inline-block;
+}
+
+.content_wrapper {
+    padding: 0 30px;
+}
+
+.domain_item {
+    width: 100%;
+}
+
+.domain_item h2 {
+    font-family: var(--main-font);
+    font-size: 1.4em;
+    color: var(--text-color1);
+    margin: 20px 0;
+}
+
+.domain_table {
+    border: 1px solid #27272a;
+    outline: 1px solid #27272a;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    width: 100%;
+}
+
+.domain_table th {
+    border-bottom: 1px solid #27272a;
+    color: #a1a1aa;
+    font-size: 13px;
+}
+
+.domain_table th,
+td {
+    padding: 12px;
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
+.domain_table td {
+    color: var(--text-color1);
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.domain_table td img {
+    width: 18px;
+    margin-top: -3px;
+    margin-right: 3px;
+}
+
+.domain_table td .active {
+    color: #009688;
+    margin-right: 20px;
+}
+
+.domain_table td a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: #f44336;
+}
+
+@media screen and (max-width: 1200px) {
+    .domain_table {
+        width: 100%;
+        display: block;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .domain_table th,
+    td {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content_wrapper {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .domain_head {
+        display: block;
+    }
+
+    .domain_head_btn a {
+        margin-bottom: 25px;
+    }
+}
