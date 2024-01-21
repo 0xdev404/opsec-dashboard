@@ -234,6 +234,7 @@ a {
     outline: none;
     transition: background 0.2s ease-out, border-color 0.2s ease-out;
   }
+
   .radio::after {
     border: 2px solid #18181b;
     border-top: 0;
@@ -259,6 +260,7 @@ a {
     border-left: 0;
   }
 }
+
 .plan-details {
   border: 2px solid #18181b;
   cursor: pointer;
@@ -277,20 +279,20 @@ a {
   border-color: #18181b;
 }
 
-.radio:checked ~ .plan-details {
+.radio:checked~.plan-details {
   border-color: var(--btn-color);
 }
 
-.radio:disabled ~ .plan-details {
+.radio:disabled~.plan-details {
   color: var(--btn-color);
   cursor: default;
 }
 
-.radio:disabled ~ .plan-details .plan-type {
+.radio:disabled~.plan-details .plan-type {
   color: var(--btn-color);
 }
 
-.choose_domain_card:hover .radio:disabled ~ .plan-details {
+.choose_domain_card:hover .radio:disabled~.plan-details {
   box-shadow: none;
 }
 
@@ -395,7 +397,7 @@ a {
   margin-top: 100px;
 }
 
-.domain_next_btn a {
+.domain_next_btn button {
   display: inline-block;
   background-color: var(--btn-color);
   text-decoration: none;
@@ -416,7 +418,7 @@ a {
   -o-transition: 0.5s;
 }
 
-.domain_next_btn a img {
+.domain_next_btn button img {
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -424,7 +426,7 @@ a {
   -o-transition: 0.5s;
 }
 
-.domain_next_btn a:hover img {
+.domain_next_btn button:hover img {
   transform: translateX(5px);
   -webkit-transform: translateX(5px);
   -moz-transform: translateX(5px);

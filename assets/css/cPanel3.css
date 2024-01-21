@@ -365,7 +365,7 @@ a {
   margin-top: 20px;
 }
 
-.payment_success_btn a {
+.payment_success_btn button {
   text-decoration: none;
   color: var(--text-color1);
   background: var(--btn-color);
@@ -386,7 +386,7 @@ a {
   -o-transition: 0.5s;
 }
 
-.payment_success_btn a img {
+.payment_success_btn button img {
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -394,7 +394,7 @@ a {
   -o-transition: 0.5s;
 }
 
-.payment_success_btn a:hover img {
+.payment_success_btn button:hover img {
   transform: translateX(5px);
   -webkit-transform: translateX(5px);
   -moz-transform: translateX(5px);

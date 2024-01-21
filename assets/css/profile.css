@@ -127,7 +127,7 @@ input[type="file"] {
     }
 }
 
-.profile-infos {
+.form-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
@@ -154,7 +154,7 @@ input[type="file"] {
     margin-top: 25px;
 }
 
-.save-btn a {
+.save-btn {
     background-color: #27272A;
     font-size: 16px;
     font-weight: 600;
@@ -165,6 +165,12 @@ input[type="file"] {
     align-items: center;
     color: #3F3F46;
     border-radius: 12px;
+    border: none;
+}
+
+.save-btn:hover {
+    color: var(--text-color1);
+    background-color: var(--btn-color);
 }
 
 @media screen and (max-width: 768px) {
