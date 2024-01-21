@@ -312,7 +312,11 @@ body {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   z-index: 99 !important;
-  /* display: none; */
+  display: none;
+}
+
+#cart_modal.active {
+  display: block;
 }
 
 .cart_head {
@@ -498,6 +502,10 @@ body {
   -o-border-radius: 20px;
   z-index: 99 !important;
   display: none;
+}
+
+#notification_modal.active {
+  display: block;
 }
 
 .notification_head {
