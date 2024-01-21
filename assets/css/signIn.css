@@ -54,7 +54,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #27272A;
+  background-color: #27272a;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -63,7 +63,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #71717A;
+  background: #71717a;
 }
 
 /* Scroll Bar CSS End */
@@ -150,24 +150,37 @@ body {
 
 .one {
   background-color: var(--primary-color);
-  animation: bounce 0.8s;
 }
 
 .two {
   background-color: #e53935;
   margin-left: -30px;
-  animation: bounce 1s;
 }
 
 .three {
   background-color: #e57373;
   margin-left: -30px;
-  animation: bounce 1.2s;
 }
 
 .four {
   background-color: #ef9a9a;
   margin-left: -30px;
+}
+
+.circles.active .one {
+  background-color: var(--primary-color);
+  animation: bounce 0.8s;
+}
+
+.circles.active .two {
+  animation: bounce 1s;
+}
+
+.circles.active .three {
+  animation: bounce 1.2s;
+}
+
+.circles.active .four {
   animation: bounce 1.4s;
 }
 

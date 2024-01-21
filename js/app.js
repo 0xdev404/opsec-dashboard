@@ -15,3 +15,14 @@ function checkChange() {
     }
   }
 }
+
+// sign in and sign up page circle animation
+const circles = document.querySelector(".circles");
+
+setInterval(() => {
+  if (circles.classList.contains("active")) {
+    circles.classList.remove("active");
+  } else {
+    circles.classList.add("active");
+  }
+}, 3000);
