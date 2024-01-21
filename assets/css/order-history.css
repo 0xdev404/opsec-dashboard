@@ -76,13 +76,13 @@
 
 
 /* Fund table start */
-.fund_head {
+.order_history_head {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.fund_head_btn a {
+.order_history_head_btn a {
     text-decoration: none;
     color: var(--text-color1);
     font-weight: 600;
@@ -100,18 +100,18 @@
     padding: 0 30px;
 }
 
-.fund_item {
+.order_history_item {
     width: 100%;
 }
 
-.fund_item h2 {
+.order_history_item h2 {
     font-family: var(--main-font);
     font-size: 1.4em;
     color: var(--text-color1);
     margin: 20px 0;
 }
 
-.fund_table {
+.order_history_table {
     border: 1px solid #27272a;
     outline: 1px solid #27272a;
     border-collapse: collapse;
@@ -124,51 +124,51 @@
     width: 100%;
 }
 
-.fund_table th {
+.order_history_table th {
     border-bottom: 1px solid #27272a;
     color: #a1a1aa;
     font-size: 13px;
 }
 
-.fund_table th,
+.order_history_table th,
 td {
     padding: 12px;
     font-family: var(--main-font);
     font-weight: 500;
 }
 
-.fund_table td {
+.order_history_table td {
     color: var(--text-color1);
     font-size: 14px;
     vertical-align: middle;
 }
 
-.fund_table td img {
+.order_history_table td img {
     width: 18px;
     margin-top: -3px;
     margin-right: 3px;
 }
 
-.fund_table td .active {
+.order_history_table td .active {
     color: #009688;
     margin-right: 20px;
 }
 
-.fund_table td a {
+.order_history_table td a {
     text-decoration: none;
     margin: 0 5px;
     color: #f44336;
 }
 
-@media screen and (max-width: 768px) {
-    .fund_table {
+@media screen and (max-width: 575px) {
+    .order_history_table {
         width: 100%;
         display: block;
         overflow-x: scroll;
         white-space: nowrap;
     }
 
-    .fund_table th,
+    .order_history_table th,
     td {
         width: 100%;
     }
@@ -181,7 +181,7 @@ td {
 }
 
 @media screen and (max-width: 575px) {
-    .fund_head {
+    .order_history_head {
         margin-bottom: 20px;
     }
 

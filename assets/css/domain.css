@@ -51,6 +51,7 @@
 /* Scroll Bar CSS Start */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -317,7 +318,7 @@ td {
   color: #f44336;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .domain_table {
     width: 100%;
     display: block;
