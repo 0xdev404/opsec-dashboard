@@ -26,3 +26,4 @@ setInterval(() => {
     circles.classList.add("active");
   }
 }, 3000);
+
