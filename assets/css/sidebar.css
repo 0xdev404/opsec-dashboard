@@ -517,7 +517,7 @@ body {
   -o-transition: all 0.5s ease;
 }
 
-.sidebar.close~.home {
+.sidebar.close ~ .home {
   left: 78px;
   width: calc(100% - 78px);
 }
@@ -534,7 +534,7 @@ body {
     width: 60px;
   }
 
-  .sidebar.close~.home {
+  .sidebar.close ~ .home {
     left: 60px;
     width: calc(100% - 60px);
   }
@@ -619,5 +619,21 @@ body {
 
   .nav_items .toggle_mode i {
     font-size: 1.2em;
+  }
+
+  .toggle-sidebar svg {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+
+  .toggle-sidebar svg.active {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
   }
 }

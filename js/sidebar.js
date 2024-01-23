@@ -43,17 +43,6 @@ const toggleSidebar = document.querySelector(".toggle-sidebar");
 const logo = document.querySelector(".logo-box");
 const sidebar = document.querySelector(".sidebar");
 
-let media = window.matchMedia("(max-width: 990px)");
-
-function mediaToggle(e) {
-  if (e.matches) {
-    sidebar.classList.add("close");
-  } else {
-    sidebar.classList.remove("close");
-  }
-}
-media.addListener(mediaToggle);
-
 toggleSidebar.addEventListener("click", () => {
   sidebar.classList.toggle("close");
   let toggleSidebarIcon = toggleSidebar.querySelector(".toggle-sidebar svg");
@@ -63,3 +52,15 @@ toggleSidebar.addEventListener("click", () => {
 logo.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
+
+// if device width 900px to sidebar auto close
+let media = window.matchMedia("(max-width: 900px)");
+
+function mediaToggle(e) {
+  if (e.matches) {
+    sidebar.classList.add("close");
+  } else {
+    sidebar.classList.remove("close");
+  }
+}
+media.addListener(mediaToggle);
