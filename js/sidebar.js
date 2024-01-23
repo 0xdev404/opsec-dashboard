@@ -37,9 +37,22 @@ subListItems.forEach((item) => {
   });
 });
 
+/// sidebar
+
 const toggleSidebar = document.querySelector(".toggle-sidebar");
 const logo = document.querySelector(".logo-box");
 const sidebar = document.querySelector(".sidebar");
+
+let media = window.matchMedia("(max-width: 990px)");
+
+function mediaToggle(e) {
+  if (e.matches) {
+    sidebar.classList.add("close");
+  } else {
+    sidebar.classList.remove("close");
+  }
+}
+media.addListener(mediaToggle);
 
 toggleSidebar.addEventListener("click", () => {
   sidebar.classList.toggle("close");
