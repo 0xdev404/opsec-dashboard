@@ -1,18 +1,13 @@
 // add fund card
-let checkbox = document.querySelectorAll(".radio");
-let b = false;
-function checkChange() {
-  b = !b;
-  if (b) {
-    for (let i = 0; i < checkbox.length; i++) {
-      if (checkbox[i].checked === false) {
-        checkbox[i].disabled = "true";
+function checkChange(clickedCheckbox) {
+  const checkboxes = document.querySelectorAll('input[name="plan"]');
+
+  if (clickedCheckbox.checked) {
+    checkboxes.forEach(checkbox => {
+      if (checkbox !== clickedCheckbox) {
+        checkbox.checked = false;
       }
-    }
-  } else {
-    for (let i = 0; i < checkbox.length; i++) {
-      checkbox[i].removeAttribute("disabled");
-    }
+    });
   }
 }
 
