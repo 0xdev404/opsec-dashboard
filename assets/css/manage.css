@@ -333,8 +333,8 @@
   width: 100%;
   border: none;
   outline: none;
-  background: #27272a;
-  color: #3f3f46;
+  background: var(--btn-color);
+  color: var(--text-color1);
   font-family: var(--main-font);
   font-size: 1em;
   font-weight: 600;
@@ -353,7 +353,7 @@
 }
 
 .dns_management_form .dns_btn:hover {
-  background: var(--btn-color);
+  background: var(--primary-color);
   color: var(--text-color1);
 }
 
